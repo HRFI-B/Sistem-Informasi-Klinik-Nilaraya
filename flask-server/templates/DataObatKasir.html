@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='dataObatAdmin.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <title>Data Obat</title>
+</head>
+
+<body>
+<div class="body">
+      <div class="sidebar">
+        <header class="header">KliniX</header>
+        <ul class="ul">
+          <li>
+            <a href="/dashboard">
+              <img src="https://img.icons8.com/windows/48/FFFFFF/home-page.png" />
+              <!-- <a target="_blank" href="https://icons8.com/icon/6g6b5Mh-1uJ7/home-page">Home Page icon by Icons8</a> -->
+              <p>Beranda</p>
+            </a>
+          </li>
+          <li>
+            <a href="/waiting_list_umum">
+              <img src="https://img.icons8.com/material-outlined/48/FFFFFF/ingredients-list.png" />
+              <!-- <a target="_blank" href="https://icons8.com/icon/101505/list-view">List View icon by Icons8</a> -->
+              <p>Waiting List Umum</p>
+            </a>
+          </li>
+          <li>
+            <a href="/waiting_list_gigi">
+              <img src="https://img.icons8.com/windows/48/FFFFFF/tooth.png" />
+              <!-- <a target="_blank" href="https://icons8.com/icon/4948/tooth">Tooth icon by Icons8</a> -->
+              <p>Waiting List Gigi</p>
+            </a>
+          </li>
+          <li>
+            <a href="/pasien">
+              <img
+              src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/48/FFFFFF/external-hospital-bed-healthcare-tanah-basah-basic-outline-tanah-basah.png"
+               />
+            <!-- <img src="https://img.icons8.com/small/42/FFFFFF/user.png" /> -->
+              <p>Pasien</p>
+            </a>
+          </li>
+          <li>
+            <a href="/obat" class="active">
+              <img
+              src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/48/02414D/external-medicine-healthcare-tanah-basah-basic-outline-tanah-basah.png"
+               />
+            <!-- <a target="_blank" href="https://icons8.com/icon/7N4bD4LTeOZF/medicine">medicine icon by Icons8</a> -->
+              <p>Obat</p>
+            </a>
+          </li>
+          <li>
+            <a href="/logout">
+              <img src="https://img.icons8.com/windows/48/FFFFFF/exit.png"  />
+              <!-- <a target="_blank" href="https://icons8.com/icon/22112/logout">Logout icon by Icons8</a> -->
+              <p>Logout</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="head">
+        <div class="wrap-bagianAtas">
+          <div class="bagianAtas">
+            <h1>Data Obat</h1>
+          </div>
+            <div class="cari">
+              <input type="text" class="inputcari" placeholder="Cari..." id="myInput" onkeyup="myFunction()"/>
+            </div>
+        </div>
+
+        <div class="wrap-table">
+
+          <div class="table">
+            <table id="myTable">
+              <thead>
+                <tr>
+                  <th>Nama Obat</th>
+                  <th>ID Obat</th>
+                  <th>Kuantitas</th>
+                  <th>Harga Jual/Strip</th>
+                  <th>Harga Jual Satuan</th>
+                  <th>Harga Beli</th>
+                  <th>Exp Date</th>
+                  <th>Jenis Obat</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for obat in obat %}
+                  <tr>
+                    <td>{{ obat['nama_obat'] }}</td>
+                    <td>{{ obat['id_obat'] }}</td>
+                    <td>{{ obat['kuantitas'] }}</td>
+                    <td>{{ obat['harga_strip'] }}</td>
+                    <td>{{ obat['harga_satuan'] }}</td>
+                    <td>{{ obat['harga_beli'] }}</td>
+                    <td>{{ obat['exp_date'] }}</td>
+                    <td>{{ obat['jenis_obat'] }}</td>
+                    <td>
+                      <div class="aksi">
+                        <a href="{{ url_for('obat_inc', id_obat = obat['id_obat']) }}">
+                        <button
+                          class="btn_tambah_kas"
+                        >
+                        <img src="https://img.icons8.com/ios-filled/15/FFFFFF/plus-math.png"/>
+                        </button>
+                        </a>
+                        <a href="{{ url_for('obat_dec', id_obat = obat['id_obat']) }}">
+                          <button
+                            class="btn_hapus_kas"
+                          >
+                          <img src="https://img.icons8.com/ios-filled/15/FFFFFF/minus-math.png"/>
+                          </button>
+                          </a>
+                        
+                      </div>
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<script>
+  function myFunction() {
+    // Declare variables
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+  
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+  </script>
+</html>
