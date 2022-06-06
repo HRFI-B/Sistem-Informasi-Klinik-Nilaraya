@@ -16,9 +16,7 @@ app = Flask(__name__)
 app.secret_key = '069420'
 
 #Koneksi, inisialisasi DB
-# app.config['MYSQL_HOST'] = f"mysql + mysqldb://root:{PASSWORD}@{PUBLIC_IP_ADDRESS}/{DBNAME}?unix_socket =/cloudsql/{PROJECT_ID}:{INSTANCE_NAME}"
-app.config['MYSQL_HOST'] = '192.168.1.9'
-# app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'nilaraya'
