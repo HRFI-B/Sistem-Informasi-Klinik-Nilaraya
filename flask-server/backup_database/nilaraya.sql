@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 05, 2022 at 06:01 PM
+-- Generation Time: May 08, 2022 at 12:39 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.28
 
@@ -38,8 +38,11 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`username`, `nama`, `password`) VALUES
-('gAAAAABic-NbeXDyLknngW7JRTKV2ubc9jOoMrIt4e3y-Z8ibJfDDzr6LfWBaHxiM1j4VDsNjQUyA2Nc_VXl16J2E-7WXntVyw==', 'Ihza Fajrur Rachman Hasani', 'gAAAAABic-NbLEWGZdWMmYxePOrhKTtaUKzIRo3ZEH1VLNk0aaAV3h31fcRLB1nHPAW--99Zx81MMHGWM6CcQ8jx_YkqVS8Dfg=='),
-('gAAAAABic_B276scQfOhDY6Gg1qZ1DB-ooDa9830RWuRlaFbC0NkY6JillQvGp5ZfV42p5QbPKjluhKUvUnHDoTE_IpmGBO-ZQ==', 'Admin', 'gAAAAABic_B2CpcJ0SZacZNd0idA8sXMRP51u6caBtdWfk5yw0gKDKr3bDQTKKv3VmSiBsyo3ye2ShI8ckKJuFK-vE_bVyRz9Q==');
+('gAAAAABic_B276scQfOhDY6Gg1qZ1DB-ooDa9830RWuRlaFbC0NkY6JillQvGp5ZfV42p5QbPKjluhKUvUnHDoTE_IpmGBO-ZQ==', 'Admin', 'gAAAAABic_B2CpcJ0SZacZNd0idA8sXMRP51u6caBtdWfk5yw0gKDKr3bDQTKKv3VmSiBsyo3ye2ShI8ckKJuFK-vE_bVyRz9Q=='),
+('gAAAAABid1pHBQfvRuRQChZs6qeur7-yRaweFWc6TaqHr9HAqf7CTK8TonCM9xy4BnMSjigPhg0gEHMir4bkNlUUtb12GQjm2w==', 'Nurul Aulia Larasati', 'gAAAAABid1pHPcc5wANgAtFP7w9XQ7r_LBgxjY_PMWwUgv6mtqdCDAL6-_QMcelNvjPmCpqtzkwRko4rI7VNg9bdkLaYDJc5nA=='),
+('gAAAAABid5lwa3WwLuFuzXUZ0KxPoJWkW-XzVRH5lsQYugdon4cnkbPGxstx0D5VuKJNI7u92voiNNgqkiMjB4lE0cgy5a1RMA==', 'Ilham Nofri Yandra', 'gAAAAABid5lwxk4z9nieBnmbq0wyrKN5AV8jDJVrH44tpPrmXbtNeVxNzQMwCR5k6aS1_QR915MX7zGKwJu-HXuTVs6Vv3gFcg=='),
+('gAAAAABid5r-WYXUE32MOzFwgMVtxgsiPGU15q3abtqZQBKTxbWJnJST106dCkHYkGZaRiv_PFWYOtUW7vn6wpwVhDsj_AwFtQ==', '', 'gAAAAABid5r-GcElGqzm_Vk1b0VnTaQ_caJGESON2OGAYlAENO0ASjS4ks7NcE286E5YIeHBWEVmeXvirwQoPdxpq-zSrUhNvQ=='),
+('gAAAAABid5t_YRrgnum5wF1iXNNH8g7U18WXSouKpsb7hx7xtbz-dcTW7Y4YaYPce1adLPe5wWgae0656jsy88ZPs4xFT3AFcQ==', '', 'gAAAAABid5t_tQq9NC74wRUgkEgU4brjLjdSltHEP3ciGNXMjwFVk3VFCjppR9VB31igczl56ImeqdSHt5h5nR9GkdkG9SJ0Eg==');
 
 -- --------------------------------------------------------
 
@@ -59,7 +62,8 @@ CREATE TABLE `dokter` (
 --
 
 INSERT INTO `dokter` (`username`, `nama`, `password`, `jenis_dokter`) VALUES
-('gAAAAABic-vmlsPS1GEzka9wDLc7Fu_kGnaFcoYZS4yuGhw3rzwzMVhdHI3KBcC6OBmrb_JhoFk24TSzjxUAPiNJXuWU23Xu8A==', 'Nila Dewi Andayani', 'gAAAAABic-vnTQt0HfjlWvS5XtSEzOeeX12AOqnP5f-y5mpVlynyk4ZJ0wUcoGsC_hiG9iPSz9y5qH7BLBQ49niyLwqvvQiNFg==', 'Dokter Gigi');
+('gAAAAABic-vmlsPS1GEzka9wDLc7Fu_kGnaFcoYZS4yuGhw3rzwzMVhdHI3KBcC6OBmrb_JhoFk24TSzjxUAPiNJXuWU23Xu8A==', 'Nila Dewi Andayani', 'gAAAAABic-vnTQt0HfjlWvS5XtSEzOeeX12AOqnP5f-y5mpVlynyk4ZJ0wUcoGsC_hiG9iPSz9y5qH7BLBQ49niyLwqvvQiNFg==', 'Dokter Gigi'),
+('gAAAAABidyQZxvRxe9jBmB4aCL7Fdrae4v2IzTF-MPAqoQD6FyWhEoB-fUYyuS8CxD06NntmG_SlEGT-ypfwf3WbBtyUPy9c_Q==', 'Test', 'gAAAAABidyQa0enHxuB84v4BHVJ5SXXzNcJshAacuzcwHQ4XE3ZAgBSxt6YvskRSGAvE6Bri01-7BfeGVxkfG-QJOiG-Mo17cQ==', 'Dokter Umum');
 
 -- --------------------------------------------------------
 
@@ -87,7 +91,7 @@ INSERT INTO `kasir` (`username`, `nama`, `password`) VALUES
 --
 
 CREATE TABLE `obat` (
-  `id_obat` varchar(4) NOT NULL,
+  `id_obat` varchar(10) NOT NULL,
   `nama_obat` varchar(50) NOT NULL,
   `kuantitas` int(4) NOT NULL,
   `exp_date` date NOT NULL,
@@ -96,6 +100,14 @@ CREATE TABLE `obat` (
   `harga_strip` int(9) DEFAULT NULL,
   `harga_beli` int(9) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `obat`
+--
+
+INSERT INTO `obat` (`id_obat`, `nama_obat`, `kuantitas`, `exp_date`, `jenis_obat`, `harga_satuan`, `harga_strip`, `harga_beli`) VALUES
+('ID21', 'Panadol', 10, '2022-11-16', 'Tablet', 12000, 2000, 10000),
+('ID22', 'Antimo', 5, '2023-06-06', 'Kapsul', 7000, 1000, 5000);
 
 -- --------------------------------------------------------
 
@@ -119,7 +131,17 @@ CREATE TABLE `pasien` (
 --
 
 INSERT INTO `pasien` (`no_rekam_medik`, `nama`, `ttl`, `jenis_kelamin`, `riwayat_penyakit`, `no_bpjs`, `no_hp`, `alamat`) VALUES
-('419', 'Mujib Hulyufi', '1999-01-01', 'Laki-laki', 'None', '', '085707781974', 'Kediri');
+('123', 'munib', '', 'Perempuan', '', '', '', 'Jl. Singa No. 11'),
+('2', 'alex', 'jakarta, 09/05/2022.', 'Laki-laki', 'kutil', '2', '0898086431', 'kediri'),
+('222', 'axel', '', 'Laki-laki', '', '', '', ''),
+('245', 'toto', '', 'Laki-laki', '', '', '', ''),
+('553', 'tutu', '', 'Laki-laki', '', '', '', ''),
+('555', 'hiihi', '', 'Laki-laki', '', '', '', ''),
+('567', 'ok', '', 'Perempuan', '', '', '', ''),
+('657', 'fufu', '', 'Laki-laki', '', '', '', ''),
+('666', 'lay', '', 'Laki-laki', '', '', '', ''),
+('744', 'yey', '', 'Perempuan', '', '', '', ''),
+('777', 'ina', '', 'Perempuan', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -135,7 +157,7 @@ CREATE TABLE `rekam_medik` (
   `keterangan` text NOT NULL,
   `tanggal` date NOT NULL,
   `tipe` varchar(10) NOT NULL,
-  `username_dokter` varchar(10) NOT NULL
+  `username_dokter` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -143,15 +165,25 @@ CREATE TABLE `rekam_medik` (
 --
 
 INSERT INTO `rekam_medik` (`no_rm_pasien`, `kode_tindakan`, `nama_tindakan`, `diagnosis`, `keterangan`, `tanggal`, `tipe`, `username_dokter`) VALUES
-('419', '000', 'Dummy Data', 'dsadsa', 'dsa', '2022-05-04', 'Umum', 'admin'),
-('419', '000', 'Dummy Data', 'dsadsa', 'gfdgfd', '2022-05-05', 'Umum', 'dokter'),
-('419', '000', 'Dummy Data', 'dsa', 'dsads', '2022-05-05', 'Umum', 'dokter'),
-('419', '000', 'Dummy Data', 'fdhgf', 'hgfgfhgf', '2022-05-05', 'Umum', 'dokter'),
-('419', '000', 'Dummy Data', ';lkl;kl', ';lkfhj', '2022-05-05', 'Umum', 'dokter'),
-('419', '000', 'Dummy Data', ';lkl;kl', ';lkfhj', '2022-05-05', 'Umum', 'dokter'),
-('419', '000', 'Dummy Data', 'fgdhdf', 'bfvcbfvcb', '2022-05-05', 'Umum', 'dokter'),
-('419', '000', 'Dummy Data', 'fdsfsfs', 'jhgghj', '2022-05-05', 'Umum', 'dokter'),
-('419', '000', 'Dummy Data', 'dsadsa', 'dsadsadsa', '2022-05-05', 'Umum', 'dokter');
+('2', '000', 'Dummy Data', 'dsadsa', 'dsa', '2022-05-04', 'Umum', 'admin'),
+('2', '000', 'Dummy Data', 'dsadsa', 'gfdgfd', '2022-05-05', 'Umum', 'dokter'),
+('2', '000', 'Dummy Data', 'dsa', 'dsads', '2022-05-05', 'Umum', 'dokter'),
+('2', '000', 'Dummy Data', 'fdhgf', 'hgfgfhgf', '2022-05-05', 'Umum', 'dokter'),
+('2', '000', 'Dummy Data', ';lkl;kl', ';lkfhj', '2022-05-05', 'Umum', 'dokter'),
+('2', '000', 'Dummy Data', ';lkl;kl', ';lkfhj', '2022-05-05', 'Umum', 'dokter'),
+('2', '000', 'Dummy Data', 'fgdhdf', 'bfvcbfvcb', '2022-05-05', 'Umum', 'dokter'),
+('2', '000', 'Dummy Data', 'fdsfsfs', 'jhgghj', '2022-05-05', 'Umum', 'dokter'),
+('2', '000', 'Dummy Data', 'dsadsa', 'dsadsadsa', '2022-05-05', 'Umum', 'dokter'),
+('2', '002', 'Data Dummy 2', 'dsa', 'dsads', '2022-05-06', 'Gigi', 'Nila Dewi Andayani'),
+('2', '000', 'Dummy Data', 'Rematik', 'Banyak istirahat', '2022-05-08', 'Umum', 'Test'),
+('2', '002', 'Data Dummy 2', '', '', '2022-05-08', 'Gigi', 'Nila Dewi Andayani'),
+('123', '000', 'Dummy Data', 'jARANG MANDI', '', '2022-05-08', 'Umum', 'Admin'),
+('123', '000', 'Dummy Data', '', '', '2022-05-08', 'Umum', 'Admin'),
+('123', '000', 'Dummy Data', '', '', '2022-05-08', 'Umum', 'Admin'),
+('123', '000', 'Dummy Data', 'Sakit perut', '', '2022-05-08', 'Umum', 'Admin'),
+('123', '000', 'Dummy Data', '', 'tidak ada\r\n', '2022-05-08', 'Umum', 'Admin'),
+('123', '000', 'Dummy Data', 'Tidak ada', 'Tidak Ada\r\n', '2022-05-08', 'Umum', 'Admin'),
+('123', '002', 'Data Dummy 2', 'ga ada', 'Yahaha', '2022-05-08', 'Gigi', 'Admin');
 
 -- --------------------------------------------------------
 
@@ -174,13 +206,16 @@ CREATE TABLE `tagihan` (
 --
 
 INSERT INTO `tagihan` (`id_tagihan`, `no_rm_pasien`, `tanggal`, `biaya_admin`, `kode_tindakan`, `biaya_tindakan`, `nama_dokter`) VALUES
-(1, '419', '2022-05-05', 15000, '000', 100000, 'dokter'),
-(2, '419', '2022-05-05', 15000, '000', 100000, 'dokter'),
-(3, '419', '2022-05-05', 15000, '000', 100000, 'dokter'),
-(4, '419', '2022-05-05', 15000, '000', 100000, 'dokter'),
-(5, '419', '2022-05-05', 15000, '000', 100000, 'dokter'),
-(6, '419', '2022-05-05', 15000, '000', 100000, 'dokter'),
-(7, '419', '2022-05-05', 15000, '000', 100000, 'dokter');
+(1, '2', '2022-05-05', 15000, '000', 100000, 'dokter'),
+(2, '2', '2022-05-05', 15000, '000', 100000, 'dokter'),
+(3, '2', '2022-05-05', 15000, '000', 100000, 'dokter'),
+(4, '2', '2022-05-05', 15000, '000', 100000, 'dokter'),
+(5, '2', '2022-05-05', 15000, '000', 100000, 'dokter'),
+(6, '2', '2022-05-05', 15000, '000', 100000, 'dokter'),
+(7, '2', '2022-05-05', 15000, '000', 100000, 'dokter'),
+(9, '2', '2022-05-06', 15000, '002', 10000, 'Nila Dewi Andayani'),
+(12, '2', '2022-05-08', 15000, '000', 100000, 'Test'),
+(13, '2', '2022-05-08', 15000, '002', 10000, 'Nila Dewi Andayani');
 
 -- --------------------------------------------------------
 
@@ -201,7 +236,8 @@ CREATE TABLE `tindakan` (
 --
 
 INSERT INTO `tindakan` (`kode_tindakan`, `nama_tindakan`, `klasifikasi_umur`, `jenis_tindakan`, `tarif`) VALUES
-('000', 'Dummy Data', 'Anak-anak', 'Umum', 100000);
+('000', 'Dummy Data', 'Anak-anak', 'Umum', 100000),
+('002', 'Data Dummy 2', 'Anak-anak', 'Gigi', 10000);
 
 -- --------------------------------------------------------
 
@@ -221,7 +257,18 @@ CREATE TABLE `waiting_list_gigi` (
 --
 
 INSERT INTO `waiting_list_gigi` (`no_urut`, `no_rekam_medis`, `nama_pasien`, `status`) VALUES
-(1, '419', 'Mujib Hulyufi', 'Mengantri');
+(1, '2', 'Mujib Hulyufi', 'Mengantri'),
+(2, '123', 'munib', 'Mengantri'),
+(3, '2', 'alex', 'Mengantri'),
+(4, '222', 'axel', 'Mengantri'),
+(5, '553', 'tutu', 'Mengantri'),
+(6, '567', 'ok', 'Mengantri'),
+(7, '657', 'fufu', 'Mengantri'),
+(8, '777', 'ina', 'Mengantri'),
+(9, '666', 'lay', 'Mengantri'),
+(10, '744', 'yey', 'Mengantri'),
+(11, '555', 'hiihi', 'Mengantri'),
+(12, '123', 'munib', 'Mengantri');
 
 -- --------------------------------------------------------
 
@@ -241,7 +288,16 @@ CREATE TABLE `waiting_list_umum` (
 --
 
 INSERT INTO `waiting_list_umum` (`no_urut`, `no_rekam_medis`, `nama_pasien`, `status`) VALUES
-(1, '419', 'Mujib Hulyufi', 'Mengantri');
+(1, '123', 'munib', 'Mengantri'),
+(2, '2', 'alex', 'Mengantri'),
+(3, '222', 'axel', 'Mengantri'),
+(4, '245', 'toto', 'Mengantri'),
+(5, '553', 'tutu', 'Mengantri'),
+(6, '555', 'hiihi', 'Mengantri'),
+(7, '567', 'ok', 'Mengantri'),
+(8, '657', 'fufu', 'Mengantri'),
+(9, '666', 'lay', 'Mengantri'),
+(10, '744', 'yey', 'Mengantri');
 
 --
 -- Indexes for dumped tables
@@ -322,7 +378,7 @@ ALTER TABLE `waiting_list_umum`
 -- AUTO_INCREMENT for table `tagihan`
 --
 ALTER TABLE `tagihan`
-  MODIFY `id_tagihan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_tagihan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Constraints for dumped tables
@@ -346,7 +402,7 @@ ALTER TABLE `tagihan`
 -- Constraints for table `waiting_list_gigi`
 --
 ALTER TABLE `waiting_list_gigi`
-  ADD CONSTRAINT `waitListGigi` FOREIGN KEY (`no_rekam_medis`) REFERENCES `pasien` (`no_rekam_medik`) ON DELETE NO ACTION ON UPDATE CASCADE;
+  ADD CONSTRAINT `waitListGigi` FOREIGN KEY (`no_rekam_medis`) REFERENCES `pasien` (`no_rekam_medik`) ON UPDATE CASCADE;
 
 --
 -- Constraints for table `waiting_list_umum`
