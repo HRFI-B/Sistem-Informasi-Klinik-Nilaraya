@@ -1,61 +1,74 @@
+body {font-family: Arial, Helvetica, sans-serif; 
+    background-image: linear-gradient(to right, #02414d, #1c5268, #3d6183, #61709a, #897dac);
+   }
+/* form {border: 3px solid #f1f1f1; } */
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+button {
+    background-color: #02414D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 50px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  /*margin: 24px 0 12px 0;*/
+}
+
+img.avatar {
+  width:80%;
+  /* border-radius: 50%; */
+}
+
 .container {
-  font-family: "Roboto", sans-serif;
-  background-size: cover;
-  height: 100%;
-  width: 68%;
-  position: fixed;
-  top: 0;
-  overflow-y: "hidden";
-  left: 0;
+  padding: 16px;
+  padding-top: 0;
 }
-.container ::-webkit-scrollbar {
-  display: none;
+
+
+.card{
+    width: 25%;
+    margin: auto;
+    margin-top: 4%;
+    background-color: #f1f1f1;
+    border: 3px solid #f1f1f1;
+    border-radius: 10px;
+    box-shadow: -2px 5px 22px 9px rgba(10,10,10,0.5);
+    -webkit-box-shadow: -2px 5px 22px 9px rgba(10,10,10,0.5);
+    -moz-box-shadow: -2px 5px 22px 9px rgba(10,10,10,0.5);
 }
-.container .wrap-gambar {
-  display: flex;
-  flex-direction: row;
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
 }
-.container .login {
-  width: 100%;
-  margin-left: 5%;
-  padding-top: 21%;
-}
-.container .div2 .label-input {
-  font-size: 14px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  color: #02414D;
-}
-.container .div2 .button {
-  background-color: #02414D;
-  border-color: #02414D;
-  color: white;
-  margin-top: 10px;
-  padding: 10px;
-  font-weight: bold;
-  border-radius: 10px;
-  width: 300%;
-}
-.container .div2 .button:hover {
-  background: #011c22;
-}
-.container .div2 .input {
-  background-color: #F5F5F5;
-  height: 40px;
-  border-radius: 10px;
-  border: none;
-  color: #02414D;
-  width: 300%;
-  margin-bottom: 20px;
-}
-.container .gambar {
-  display: flex;
-  width: 100%;
-  height: fit-content;
-  
-}
-.container p {
-  font-size: 16px;
-  color: red;
-  width:300%;
-}/*# sourceMappingURL=login.css.map */
