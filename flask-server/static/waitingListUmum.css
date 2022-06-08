@@ -98,23 +98,41 @@
   background-color: white;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: auto;
-  float: right;
+  margin-left: 15%;
+  display: flex;
+  justify-items: flex-end;
+  /* float: right; */
 }
 .body .head .wrap-bagianAtas .cari .inputcari {
-  width: 40%;
+  width: 70%;
   height: 3em;
   padding: 10px 40px;
-  margin: 8px 15px;
+  margin: 8px 5px;
   box-sizing: border-box;
   border-radius: 10px;
   border: 0.2em solid #F5F5F5;
   float: right;
   font-size: 1em;
-  margin-right: 10%;
+  margin-right: 5%;
   background-color: #F5F5F5;
   position: "fixed";
   background-image: url("https://img.icons8.com/ios-glyphs/20/989898/search--v1.png");
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+.body .head .wrap-bagianAtas .cari .option-cari {
+  width: 30%;
+  height: 3em;
+  /* padding: 10px 40px; */
+  margin: 8px 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 0.2em solid #F5F5F5;
+  /* float: left; */
+  font-size: 1em;
+  /* margin-right: 10%; */
+  background-color: #F5F5F5;
+  position: "fixed";
   background-repeat: no-repeat;
   background-position: 10px;
 }
@@ -203,3 +221,6 @@
 .body .head .wrap-table .table table .btn-hapus:hover {
   background: rgb(190, 2, 2);
 }/*# sourceMappingURL=waitingListUmum.css.map */
+a{
+  text-decoration: none;
+}

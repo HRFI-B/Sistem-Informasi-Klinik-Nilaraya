@@ -72,11 +72,11 @@
           <div class="bagianAtas">
             <h1>Data Tindakan Medis</h1>
           </div>
-          <div class="cari">
-            <select class="option-cari">
-              <option>Nama</option>
-              <option>Klasifikasi Umur</option>
-              <option>Kode Tindakan</option>
+          <div class="cari" >
+            <select class="option-cari" id="option-cari">
+              <option value="Nama">Nama Tindakan</option>
+              <option value="Kode">Kode Tindakan</option>
+              <option value="Umur">Klasifikasi Umur</option>
             </select>
             <input type="text" class="inputcari" placeholder="Cari..." id="myInput" onkeyup="myFunction()"/>
           </div>
@@ -135,25 +135,50 @@
   <script>
     function myFunction() {
       // Declare variables
-      var input, filter, table, tr, td, i, txtValue;
+      var input, filter, table, tr, td, i, txtValue, search_filter,search_filter_value;
       input = document.getElementById("myInput");
       filter = input.value.toUpperCase();
       table = document.getElementById("myTable");
       tr = table.getElementsByTagName("tr");
-    
+      search_filter = document.getElementById("option-cari");
+      search_filter_value = search_filter.options[search_filter.selectedIndex].value;
       // Loop through all table rows, and hide those who don't match the search query
       for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-          txtValue = td.textContent || td.innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            tr[i].style.display = "";
-          } else {
-            tr[i].style.display = "none";
+        if (search_filter_value == "Nama") {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
           }
         }
+        else if (search_filter_value == "Kode") {
+          td = tr[i].getElementsByTagName("td")[1];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+        else if (search_filter_value == "Umur") {
+          td = tr[i].getElementsByTagName("td")[2];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }  
       }
     }
-    </script>
+  </script>
   </html>
   
