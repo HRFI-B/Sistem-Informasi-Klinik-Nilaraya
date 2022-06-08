@@ -13,7 +13,7 @@ input[type=text], input[type=password] {
   border-radius: 10px;
 }
 
-button {
+.button {
     background-color: #02414D;
     color: white;
     padding: 14px 20px;
@@ -24,7 +24,7 @@ button {
     border-radius: 50px;
 }
 
-button:hover {
+.button:hover {
   opacity: 0.8;
 }
 
@@ -62,13 +62,6 @@ img.avatar {
     -moz-box-shadow: -2px 5px 22px 9px rgba(10,10,10,0.5);
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
+.invalid{
+    color: red;
 }
